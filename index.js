@@ -2,7 +2,10 @@ const express = require('express');
 const app = express();
 
 app.get('/',(req,res)=>{
-    res.send("Hello Chiru Welcome to Backed-Dev");
+    res.send("Hello Chiru Welcome to Backend-Dev");
+});
+app.get('/about',(req,res)=>{
+    res.send("Chiru Backend-Dev");
 });
 
 app.listen(3000,()=>{
